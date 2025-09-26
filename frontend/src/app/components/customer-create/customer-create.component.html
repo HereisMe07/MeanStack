@@ -23,6 +23,22 @@
             <input matInput placeholder="John.Doe@gmail.com" formControlName="email">
             <mat-icon matSuffix>main</mat-icon>
         </mat-form-field>
+
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>
+                Fill the phone number
+            </mat-label>
+            <input matInput placeholder="+1 234 567 890" formControlName="phone">
+            <mat-icon matSuffix>phone</mat-icon>
+
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" color="primary">
+            save 
+        </button>
+        <button mat-raised-button type="reset">
+            Cancel
+        </button>
     </form>
 
 </div>
