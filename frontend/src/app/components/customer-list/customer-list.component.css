@@ -1,0 +1,34 @@
+
+/* Option 1: Deep Purple/Amber */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* In customer-list.component.css */
+
+/* Flexbox utilities */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.ms-auto {
+  margin-left: auto; /* Pushes the element to the right */
+}
+
+/* Spacing utilities (using 8px as the '2' unit and 4px as the 'p' unit) */
+.p-2 {
+  padding: 8px; /* Padding on all sides */
+}
+
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px; /* Margin on Y-axis (top/bottom) */
+}
+
+/* Optional: To make the customer details look cleaner */
+.mat-elevation-z2 > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
