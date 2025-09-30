@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
@@ -38,9 +38,9 @@ export class CustomerEditComponent {
     this.customerId = this.activatedRouter.snapshot.params['id'];
     // init the form
     this.form = new FormGroup({
-      name: new FormGroup('', Validators.required),
-      email: new FormGroup('', [Validators.required, Validators.email]),
-      phone: new FormGroup('', Validators.required),
+      name: new FormControl('', Validators.required),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      phone: new FormControl('', Validators.required),
     });
 
     if (this.customerId) {

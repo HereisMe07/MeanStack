@@ -1,0 +1,59 @@
+/* Container for the entire section (optional, but good for centering) */
+.edit-customer-page {
+    /* Set a nice background for contrast */
+    background-color: #f4f7f9;
+    min-height: 100vh; /* Full viewport height */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Style for the main header */
+h5 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Important for centering with the form */
+    max-width: 500px; /* Match form width */
+}
+
+/* Style the button container for the 'Back to the list' button */
+.back-button-container {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    /* Optional: To align the back button to the start */
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Style the form card (using the existing 'mat-elevation-z2' container) */
+.mat-elevation-z2 {
+    /* Overwrite padding and elevation if needed, but Angular Material handles this well */
+    padding: 25px !important; /* Increase padding for more breathing room */
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px; /* Set a standard width for the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger, modern shadow */
+}
+
+/* Style the form fields to ensure proper spacing */
+form mat-form-field {
+    /* Angular Material typically adds margin, but this ensures a clean gap */
+    margin-bottom: 15px;
+}
+
+/* Style the button group */
+form button {
+    /* Add space between the Save and Cancel buttons */
+    margin-right: 10px;
+    min-width: 100px; /* Give buttons a minimum width for consistency */
+}
+
+/* Optional: Style the submit button specifically */
+form button[type="submit"] {
+    font-weight: 600;
+}
